@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>AnhDuc</title>
+    <style type="text/css">
+        @import url(https://fonts.googleapis.com/css?family=Pacifico);
+        @import url('https://fonts.googleapis.com/css?family=Anton');
+        @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+        body {
+            background: linear-gradient(-45deg, #eeb662, #8462ff, #45b9e4, #1fecbc);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .container {
+            margin: 1% 0% 0% 1.5%;
+            padding: 20px;
+            width: 1470px;
+            height: 175px;
+            border: 5px solid white;
+            background-image: linear-gradient(to bottom left, rgb(233, 255, 145), #7c7c7c);
+            animation-name: animationContainer;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes animationContainer {
+            0% {
+                border-color: #0cce6b;
+                box-shadow: 0px 0px 25px #0cce6b;
+                border-radius: 5px;
+            }
+            25% {
+                border-color: #dced31;
+                box-shadow: -1px -1px 30px #dced31;
+            }
+            50% {
+                border-color: #ef2d56;
+                box-shadow: 1px 1px 25px #ef2d56;
+                border-radius: 35px;
+            }
+            75% {
+                border-color: #ed7d3a;
+                box-shadow: -1px -1px 30px #ed7d3a;
+            }
+            100% {
+                border-color: #0cce6b;
+                box-shadow: 1px 1px 25px #0cce6b;
+                border-radius: 5px;
+            }
+        }
+        
+        h1,
+        h2 {
+            text-align: center;
+        }
+        
+        h1 {
+            color: rgba(100, 50, 255, .8);
+            font-family: 'Pacifico', cursive;
+            color: #212121;
+        }
+        
+        h1.left {
+            text-align: left;
+        }
+        
+        h2.left {
+            text-align: left;
+        }
+        
+        p.right {
+            text-align: right;
+        }
+        
+        p.center {
+            margin-top: -11%;
+            text-align: center;
+            line-height: 30px;
+        }
+        
+        .rainbow {
+            margin-top: 0%;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 50px;
+            -webkit-animation: rainbow 5s infinite;
+            -ms-animation: rainbow 5s infinite;
+            animation: rainbow 5s infinite;
+        }
+        
+        blockquote.right {
+            text-align: right;
+        }
+        
+        blockquote.left {
+            text-align: left;
+        }
+        
+        blockquote.one {
+            font-size: 25px;
+            text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+            color: #fff6a9;
+            font-family: "Sacramento", cursive;
+            animation: blink1 5s infinite;
+            -webkit-animation: blink1 5s infinite;
+        }
+        
+        @-webkit-keyframes rainbow {
+            0% {
+                color: orange;
+            }
+            10% {
+                color: purple;
+            }
+            20% {
+                color: red;
+            }
+            30% {
+                color: CadetBlue;
+            }
+            40% {
+                color: yellow;
+            }
+            50% {
+                color: coral;
+            }
+            60% {
+                color: green;
+            }
+            70% {
+                color: cyan;
+            }
+            80% {
+                color: DeepPink;
+            }
+            90% {
+                color: DodgerBlue;
+            }
+            100% {
+                color: orange;
+            }
+        }
+        /* Internet Explorer */
+        
+        @-ms-keyframes rainbow {
+            0% {
+                color: orange;
+            }
+            10% {
+                color: purple;
+            }
+            20% {
+                color: red;
+            }
+            30% {
+                color: CadetBlue;
+            }
+            40% {
+                color: yellow;
+            }
+            50% {
+                color: coral;
+            }
+            60% {
+                color: green;
+            }
+            70% {
+                color: cyan;
+            }
+            80% {
+                color: DeepPink;
+            }
+            90% {
+                color: DodgerBlue;
+            }
+            100% {
+                color: orange;
+            }
+        }
+        /* Standar Syntax */
+        
+        @keyframes rainbow {
+            0% {
+                color: orange;
+            }
+            10% {
+                color: purple;
+            }
+            20% {
+                color: red;
+            }
+            30% {
+                color: CadetBlue;
+            }
+            40% {
+                color: yellow;
+            }
+            50% {
+                color: coral;
+            }
+            60% {
+                color: green;
+            }
+            70% {
+                color: cyan;
+            }
+            80% {
+                color: DeepPink;
+            }
+            90% {
+                color: DodgerBlue;
+            }
+            100% {
+                color: orange;
+            }
+        }
+        /* background */
+        /***************************************/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .header {
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 50px;
+        }
+        
+        .topnav {
+            overflow: hidden;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        .topnav a:hover {
+            color: black;
+        }
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+        
+        .fakeimg {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        .card {
+            height: 325px;
+            padding: 5% 10% 5% 10%;
+            margin: -3% 0% -0% -10%;
+        }
+        
+        .cardBook {
+            margin: 10% 15% 3% 8%;
+            padding: 2% 15% 6% 15%;
+            width: 900px;
+            height: 500px;
+            border: 2px outset rgb(1, 22, 22);
+            box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+            position: relative;
+        }
+        
+        .card1 {
+            height: 725px;
+            padding: 5% 10% 5% 10%;
+            margin: 10% 10% -0% -5%;
+            border: 3px solid #000000;
+            box-shadow: 5px 5px rgba(112, 51, 224, 0.4), 10px 10px rgba(0, 98, 90, 0.3), 15px 15px rgba(70, 20, 206, 0.2), 20px 20px rgba(6, 8, 131, 0.1), 25px 25px rgba(202, 18, 162, 0.05);
+        }
+        
+        .card2 {
+            height: 130px;
+            padding: 3% -8% 5% 8%;
+            margin: 20% 10% 0% -5%;
+            border: 5px double darkslategray;
+            box-shadow: 5px 5px rgba(112, 51, 224, 0.4), 10px 10px rgba(0, 98, 90, 0.3), 15px 15px rgba(70, 20, 206, 0.2), 20px 20px rgba(6, 8, 131, 0.1), 25px 25px rgba(202, 18, 162, 0.05);
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            padding: 2% 15% 6% 15%;
+            text-align: center;
+            margin: 5% 15% 3% 15%;
+            border: 2px outset rgb(1, 22, 22);
+            box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+            width: 1200px;
+            height: 50px;
+            position: relative;
+        }
+        
+        .footer1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1200px;
+            height: 150px;
+            margin: 5% 15% 3% 15%;
+        }
+        
+        .border-gradient {
+            background-image: linear-gradient(deepskyblue, mediumblue);
+            border-radius: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .border-gradient::before {
+            content: "";
+            background-color: hsla(0, 0%, 100%, 1);
+            position: absolute;
+            border-radius: calc(50px - 2%);
+            top: 6%;
+            left: 1%;
+            width: 1180px;
+            height: 130px;
+            z-index: -1;
+        }
+        
+        .boDy {
+            margin: 5% 15% 3% 8%;
+            padding: 2% 15% 6% 15%;
+            width: 900px;
+            height: 500px;
+            border: 2px outset rgb(1, 22, 22);
+            box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+            position: relative;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+        /*Note*/
+        
+        .list {
+            mix-blend-mode: multiply;
+            color: darkslategrey;
+            font-size: 22px;
+            padding: 0% 0% 0% 0%;
+            margin: 1% 0% 0% 0.5%;
+            width: 1000px;
+            font-family: courier, monospace;
+            border: 2px solid rgba(108, 107, 112, 0.26);
+            box-shadow: rgba(17, 21, 236, 0.4) 0px 0px 0px 3px, rgba(31, 193, 27, 0.3) 0px 0px 0px 6px, rgba(214, 37, 205, 0.2) 0px 0px 0px 9px, rgba(255, 156, 85, 0.1) 0px 0px 0px 12px, rgba(146, 14, 223, 0.05) 0px 0px 0px 15px;
+        }
+        
+        .list li {
+            list-style: none;
+            border-bottom: 1px dotted #ccc;
+            text-indent: 300px;
+            height: auto;
+            padding: 10px 10px 10px 50px;
+        }
+        
+        .list li:hover {
+            background-color: #9fbdac;
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            -o-transition: all 0.2s;
+        }
+        
+        .list li a:hover:not(.active) {
+            background-color: rgb(0, 255, 234);
+            color: rgb(0, 0, 0);
+        }
+        
+        .lines {
+            border-left: 1px solid #ffaa9f;
+            border-right: 1px solid #ffaa9f;
+            width: 2px;
+            float: left;
+            height: 495px;
+            margin-left: 40px;
+        }
+        
+        div.right1 {
+            padding: 0% 0% 0% 0%;
+            margin: 0% 0% 0% 0%;
+        }
+        /*Font 1*/
+        
+        .getFont1 {
+            margin: 0% 0% -2% 0%;
+            padding: 0% 0% 0% 0%;
+            font-family: "Pacifico", cursive;
+            font-size: 25px;
+            color: rgb(255, 181, 218);
+            text-align: center;
+            text-shadow: 0px 1px 2px rgba(255, 66, 159, 1), 0px -1px 2px rgba(255, 66, 159, 1), 1px 0px 2px rgba(255, 66, 159, 1), -1px 0px 2px rgba(255, 66, 159, 1), 1px 1px 2px rgba(255, 66, 159, 1), -1px -1px 2px rgba(255, 66, 159, 1), 1px -1px 2px rgba(255, 66, 159, 1), -1px 1px 2px rgba(255, 66, 159, 1), 0px 0px 10px rgba(255, 66, 159, 0.9), 0px 0px 20px rgba(255, 66, 159, 0.8), 0px 0px 30px rgba(255, 66, 159, 0.7), 0px 0px 40px rgba(255, 66, 159, 0.6), 0px 0px 50px rgba(255, 66, 159, 0.8), 0px 0px 60px rgba(255, 255, 255, 0.808), 0px 0px 70px rgba(255, 255, 255, 0.733);
+            -webkit-animation: flickerAnimationF1 2s infinite;
+            animation: flickerAnimationF1 2s infinite;
+        }
+        
+        @-webkit-keyframes flickerAnimationF1 {
+            0% {
+                opacity: 1;
+            }
+            31.8% {
+                opacity: 0.9;
+            }
+            32% {
+                opacity: 0;
+            }
+            32.2% {
+                opacity: 0.9;
+            }
+            94.6% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 0;
+            }
+            95.4% {
+                opacity: 0.9;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes flickerAnimationF1 {
+            0% {
+                opacity: 1;
+            }
+            31.8% {
+                opacity: 0.9;
+            }
+            32% {
+                opacity: 0;
+            }
+            32.2% {
+                opacity: 0.9;
+            }
+            94.6% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 0;
+            }
+            95.4% {
+                opacity: 0.9;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /*Font 2*/
+        
+        @-webkit-keyframes blink1 {
+            20%,
+            24%,
+            55% {
+                color: #111;
+                text-shadow: none;
+            }
+            0%,
+            19%,
+            21%,
+            23%,
+            25%,
+            54%,
+            56%,
+            100% {
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                color: #fff6a9;
+            }
+        }
+        
+        @keyframes blink1 {
+            20%,
+            24%,
+            55% {
+                color: #111;
+                text-shadow: none;
+            }
+            0%,
+            19%,
+            21%,
+            23%,
+            25%,
+            54%,
+            56%,
+            100% {
+                text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+                color: #fff6a9;
+            }
+        }
+        /*Font 3*/
+        
+        .getFont3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            font-family: "Pacifico", cursive;
+            font-size: 120px;
+            color: yellow;
+            -webkit-animation: glow 1s ease-in-out infinite alternate;
+            -moz-animation: glow 1s ease-in-out infinite alternate;
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+        
+        @-webkit-keyframes glow {
+            from {
+                text-shadow: 0 0 40px #e5ca00, 0 0 50px #e5ca00, 0 0 60px #e5ca00, 0 0 70px #e5ca00;
+            }
+            to {
+                text-shadow: 0 0 40px #fff30f, 0 0 50px #fff30f, 0 0 60px #fff30f, 0 0 70px #fff30f, 0 0 80px #fff30f;
+            }
+        }
+        /*Font 4*/
+        
+        fontNineColor {
+            --interval: 1s;
+            display: block;
+            text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(60%);
+            animation: flicker steps(100) var(--interval) 1s infinite;
+        }
+        
+        fontNineColor:nth-of-type(1) {
+            color: rgb(51, 255, 0);
+            --color1: goldenrod;
+            --color2: orangered;
+            --color3: mediumblue;
+            --color4: purple;
+            font-family: Gruppo;
+        }
+        
+        fontNineColor:nth-of-type(2) {
+            color: lightpink;
+            --color1: pink;
+            --color2: orangered;
+            --color3: red;
+            --color4: magenta;
+            font-family: Bad Script;
+        }
+        
+        fontNineColor:nth-of-type(3) {
+            color: lightyellow;
+            --color1: yellow;
+            --color2: lime;
+            --color3: green;
+            --color4: mediumblue;
+            font-family: Kumar One Outline;
+        }
+        
+        fontNineColor:nth-of-type(4) {
+            color: lightyellow;
+            --color1: gold;
+            --color2: firebrick;
+            --color3: pink;
+            --color4: red;
+            font-family: Londrina Outline;
+        }
+        
+        fontNineColor:nth-of-type(5) {
+            color: azure;
+            --color1: azure;
+            --color2: aqua;
+            --color3: dodgerblue;
+            --color4: blue;
+            font-family: Sriracha;
+        }
+        
+        fontNineColor:nth-of-type(6) {
+            color: tomato;
+            --color1: orangered;
+            --color2: firebrick;
+            --color3: maroon;
+            --color4: darkred;
+            font-family: Yellowtail;
+        }
+        
+        fontNineColor:nth-of-type(7) {
+            color: lightyellow;
+            --color1: yellow;
+            --color2: orange;
+            --color3: brown;
+            --color4: purple;
+            font-family: Bad Script;
+        }
+        
+        fontNineColor:nth-of-type(8) {
+            color: yellow;
+            --color1: yellow;
+            --color2: lime;
+            --color3: green;
+            --color4: darkgreen;
+            font-family: Monoton;
+        }
+        
+        fontNineColor:nth-of-type(9) {
+            color: lightyellow;
+            --color1: yellow;
+            --color2: gold;
+            --color3: orange;
+            --color4: darkred;
+            font-family: Sriracha;
+        }
+        
+        @keyframes flicker {
+            50% {
+                color: white;
+                filter: saturate(200%) hue-rotate(20deg);
+            }
+        }
+        /*Font 5*/
+        
+        fontNineColorBlue {
+            --interval: 2s;
+            display: block;
+            text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(100%);
+            animation: flickerBlue steps(100) var(--interval) 1s infinite;
+        }
+        
+        fontNineColorBlue:nth-of-type(1) {
+            color: rgb(86, 219, 243);
+            --color1: rgb(195, 0, 255);
+            --color2: rgb(144, 66, 233);
+            --color3: rgb(101, 58, 255);
+            --color4: rgb(114, 143, 223);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        @keyframes flickerBlue {
+            50% {
+                color: rgb(255, 255, 255);
+                filter: saturate(300%) hue-rotate(20deg);
+            }
+        }
+        /*Font 6*/
+        
+        fontNineColorBlack {
+            --interval: 2s;
+            display: block;
+            text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+            will-change: flickerBlack, color;
+            filter: saturate(100%);
+            animation: flickerBlack steps(100) var(--interval) 1s infinite;
+        }
+        
+        fontNineColorBlack:nth-of-type(1) {
+            color: rgb(34, 48, 51);
+            --color1: rgb(210, 197, 214);
+            --color2: rgb(192, 184, 202);
+            --color3: rgb(101, 58, 255);
+            --color4: rgb(114, 143, 223);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        @keyframes flickerBlack {
+            50% {
+                color: rgb(32, 29, 29);
+                filter: saturate(300%) hue-rotate(20deg);
+            }
+        }
+        /*Font 7*/
+        
+        fontNineColorPink {
+            --interval: 2s;
+            display: block;
+            text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(100%);
+            animation: flickerPink steps(100) var(--interval) 1s infinite;
+        }
+        
+        fontNineColorPink:nth-of-type(1) {
+            color: rgb(255, 174, 0);
+            --color1: rgb(0, 140, 255);
+            --color2: rgb(32, 58, 204);
+            --color3: rgb(101, 58, 255);
+            --color4: rgb(114, 143, 223);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        @keyframes flickerPink {
+            50% {
+                color: rgb(255, 255, 255);
+                filter: saturate(300%) hue-rotate(20deg);
+            }
+        }
+        /*Font 7*/
+        
+        fontNineColorGreen {
+            --interval: 2s;
+            display: block;
+            text-shadow: 0 0 10px var(--color1), 0 0 20px var(--color2), 0 0 40px var(--color3), 0 0 80px var(--color4);
+            will-change: filter, color;
+            filter: saturate(100%);
+            animation: flickerGreen steps(100) var(--interval) 1s infinite;
+        }
+        
+        fontNineColorGreen:nth-of-type(1) {
+            color: rgb(0, 255, 200);
+            --color1: rgb(0, 238, 255);
+            --color2: rgb(32, 141, 204);
+            --color3: rgb(101, 58, 255);
+            --color4: rgb(114, 143, 223);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        @keyframes flickerGreen {
+            50% {
+                color: rgb(255, 255, 255);
+                filter: saturate(300%) hue-rotate(20deg);
+            }
+        }
+        /*Book1*/
+        
+        .blockquote-wrapper {
+            display: flex;
+            height: 30vh;
+            padding: 0% 0% 0% 0%;
+            margin: 10% 0% 0% -10%;
+        }
+        /* Blockquote main style */
+        
+        .blockquote {
+            position: absolute;
+            font-family: 'Barlow Condensed', sans-serif;
+            max-width: 320px;
+            margin: 80px auto;
+            align-self: center;
+            text-align: left;
+        }
+        /* Blockquote header */
+        
+        .blockquote h1 {
+            font-family: 'Abril Fatface', cursive;
+            position: relative;
+            /* for pseudos */
+            color: #010727;
+            font-size: 2.8rem;
+            font-weight: normal;
+            line-height: 1;
+            margin: 0;
+            border: 3px solid rgb(42, 70, 35);
+            border-radius: 20px;
+            padding: 25px;
+        }
+        /* Blockquote right double quotes */
+        
+        .blockquote h1:after {
+            content: "";
+            position: absolute;
+            border: 3px solid rgb(42, 70, 35);
+            border-radius: 0 50px 0 0;
+            width: 60px;
+            height: 60px;
+            bottom: -63.5px;
+            left: 50px;
+            border-bottom: none;
+            border-left: none;
+            z-index: 3;
+        }
+        
+        .blockquote h1:before {
+            content: "";
+            position: absolute;
+            width: 80px;
+            bottom: -3px;
+            left: 50px;
+            z-index: 2;
+            border: 6px solid #e6e6ff;
+        }
+        /* increase header size after 600px */
+        
+        @media all and (min-width: 600px) {
+            .blockquote h1 {
+                font-size: 1.5rem;
+                line-height: 1.2;
+            }
+        }
+        /* Blockquote subheader */
+        
+        .blockquote h4 {
+            position: relative;
+            color: #6b1839;
+            font-size: 1.3rem;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0;
+            padding-top: 15px;
+            z-index: 1;
+            margin-left: 150px;
+            padding-left: 12px;
+        }
+        
+        .blockquote h4:first-letter {
+            margin-left: -12px;
+        }
+        /**/
+        
+        .blockquote2-wrapper {
+            display: flex;
+            height: 8.75vh;
+            padding: 0 20px;
+            margin: 0% 50% 0% 0%;
+        }
+        /* Blockquote main style */
+        
+        .blockquote2 {
+            position: absolute;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            color: #3b209e;
+            padding: 30px 0;
+            width: 100%;
+            max-width: 800px;
+            z-index: 1;
+            margin: 80px auto;
+            align-self: center;
+        }
+        /* Blockquote header */
+        
+        .blockquote2 h1 {
+            position: relative;
+            color: #237a23;
+            font-size: 40px;
+            font-weight: 300;
+            line-height: 1;
+            margin: 0;
+            text-align: left;
+        }
+        /* Blockquote right double quotes */
+        
+        .blockquote2:after {
+            position: absolute;
+            color: rgb(88, 77, 77);
+            font-size: 10rem;
+            line-height: 0;
+            bottom: -43px;
+            right: 30px;
+        }
+        /* increase header size after 600px */
+        
+        @media all and (min-width: 600px) {
+            .blockquote2 h1 {
+                font-size: 30px;
+            }
+        }
+        /* Blockquote subheader */
+        
+        .blockquote2 h4 {
+            position: relative;
+            color: #1a29fa;
+            font-size: 1rem;
+            font-weight: normal;
+            line-height: 1;
+            margin: 0;
+            padding-top: 5px;
+            z-index: 1;
+        }
+        /*Book1*/
+        
+        .bookCard {
+            margin: 9.5% 0% 0% 7%;
+            position: relative;
+            width: 400px;
+            height: 550px;
+            border: 10px solid #2b3ac0;
+            box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255), rgba(255, 255, 255, 0.5)), url("https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/tt.jpg?raw=true");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #e6f0e6;
+        }
+        
+        .bookCard .text-container {
+            width: 80%;
+            height: 80%;
+            margin: auto;
+            z-index: -1;
+        }
+        
+        .strikethrough {
+            text-decoration: line-through;
+        }
+        
+        .bookCard .text-container #head {
+            font-family: 'Nobile', sans-serif;
+            font-size: 1.5em;
+            margin: 60px auto 60px auto;
+        }
+        
+        .bookCard p {
+            padding: 0% 0% 0% 0%;
+            font-size: 1.2em;
+            line-height: 8px;
+            font-family: 'Nobile';
+            color: #331717;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        .bookCard h3 {
+            font-size: 1.5em;
+            font-family: 'Nobile';
+            font-style: italic;
+            text-align: center;
+            color: #ff0080;
+            line-height: 1px;
+        }
+        
+        .bookCard .front {
+            position: absolute;
+            width: 105%;
+            height: 103.5%;
+            margin: -10px 0px 0px -10px;
+            border: 10px solid #3f1886;
+            backface-visibility: hidden;
+            background-color: #2812eb;
+            background-size: contain;
+            transform-style: preserve-3d;
+            transform-origin: 0% 50%;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 0.8s ease-in-out;
+        }
+        
+        .bookCard:hover .front {
+            transform: perspective(1000px) rotateY(-170deg);
+            background-color: #41718d;
+        }
+        
+        .bookCard:hover .back {
+            transform: perspective(1000px) rotateY(-170deg);
+            box-shadow: 7px 0px 5px 0px rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+            background-color: #d2dcd2;
+        }
+        
+        .bookCard .back {
+            position: absolute;
+            width: 105%;
+            height: 103.5%;
+            border: 10px solid #2b3ac0;
+            margin: -10px 0px 0px -10px;
+            backface-visibility: visible;
+            filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, .5));
+            transform-style: preserve-3d;
+            transform-origin: 0% 50%;
+            transform: perspective(800px) rotateY(0deg);
+            transition: all 0.8s ease-in-out;
+            background-color: #e6f0e6;
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+        
+        .imgset {
+            margin-top: -0.5%;
+            position: relative;
+            z-index: 1;
+            margin-bottom: -215px;
+        }
+        
+        .imgset img {
+            box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+            border-radius: 5px;
+        }
+        
+        .text-right {
+            text-align: right;
+        }
+        
+        .wrapper {
+            padding-top: 100px;
+            width: 400px;
+            height: 200px;
+            margin: 0;
+            position: absolute;
+            overflow: hidden;
+            margin: 0% 0% 0% 70%;
+        }
+        
+        .main-element {
+            position: absolute;
+            top: 1%;
+            left: 1%;
+            height: 98%;
+            width: 98%;
+            margin: auto;
+            align-self: center;
+            background: rgba(223, 198, 198, 0.5);
+            z-index: 1;
+        }
+        
+        .border {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            z-index: -5;
+            height: 200%;
+            width: 200%;
+            transform: rotate(-45deg);
+            overflow: hidden;
+            background: linear-gradient(to right, #fff 20%, #fff 40%, #ECD08C 50%, #ECD08C 55%, #fff 70%, #fff 100%);
+            background-size: 200% auto;
+            animation: shine 3s linear infinite;
+        }
+        /*Begin shimmer code*/
+        
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+        /*Corner*/
+        
+        .circle-1Corner1,
+        .circle-2Corner1,
+        .circle-3Corner1 {
+            color: rgb(37, 35, 35);
+            padding: 5%;
+            width: 250px;
+            height: 240px;
+            margin: 0 -15px;
+            mix-blend-mode: multiply;
+        }
+        
+        .circle-1Corner1 {
+            background: rgb(235, 169, 94);
+            border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+            margin: 3% 0% 0% 2%;
+        }
+        
+        .circle-2Corner1 {
+            background: rgb(210, 218, 112);
+            border-radius: 80% 30% 50% 50%/50%;
+            margin: -10% 0% 0% 2%;
+        }
+        
+        .circle-3Corner1 {
+            background: rgb(146, 224, 255);
+            border-radius: 40% 40% 50% 40%/30% 50% 50% 50%;
+            margin: -10% 0% 0% 2%;
+        }
+        /*Border*/
+        
+        .main-div {
+            padding: 2% 15% 6% 15%;
+            text-align: center;
+            position: relative;
+            background-color: rgba(143, 255, 255, 0.5);
+            width: 1100px;
+            height: 50px;
+            margin: 5% 0% 0% 5%;
+        }
+        
+        .main-div2::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+            box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+            z-index: -1;
+            -webkit-animation-name: gradient-shadow;
+            animation-name: gradient-shadow;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+            -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+        }
+        
+        @-webkit-keyframes gradient-shadow {
+            0% {
+                -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+                box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+            }
+            20% {
+                -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+                box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+            }
+            40% {
+                -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+                box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+            }
+            60% {
+                -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+                box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+            }
+            80% {
+                -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+                box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+            }
+            100% {
+                -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+                box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+            }
+        }
+        
+        @keyframes gradient-shadow {
+            0% {
+                -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+                box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+            }
+            20% {
+                -webkit-box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+                box-shadow: 0 0 17px 3px #0ff, 0 0 4px 2px #0ff;
+            }
+            40% {
+                -webkit-box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+                box-shadow: 0 0 17px 3px #0f0, 0 0 4px 2px #0f0;
+            }
+            60% {
+                -webkit-box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+                box-shadow: 0 0 17px 3px #ffff01, 0 0 4px 2px #ffff01;
+            }
+            80% {
+                -webkit-box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+                box-shadow: 0 0 17px 3px #f00, 0 0 4px 2px #f00;
+            }
+            100% {
+                -webkit-box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+                box-shadow: 0 0 17px 3px #C586C0, 0 0 4px 2px #C586C0;
+            }
+        }
+        /*Border 2*/
+        
+        .border2 {
+            margin: 5% 0% 0% 1%;
+            width: 1100px;
+            height: 638px;
+            box-sizing: border-box;
+            padding: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .border2::before {
+            content: '';
+            position: absolute;
+            width: 230%;
+            height: 320%;
+            background: repeating-linear-gradient( white 0%, white 7.5px, rgb(255, 0, 140) 7.5px, rgb(226, 53, 111) 15px, white 15px, white 22.5px, hotpink 22.5px, rgb(175, 13, 67) 30px);
+            transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+            animation: animateBorder2 50s linear infinite;
+        }
+        
+        .border2 .contentB2 {
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            padding: 30px;
+            font-family: sans-serif;
+            z-index: 2;
+        }
+        
+        .border2,
+        .border2 .contentB2 {
+            box-shadow: 0 0 12px deeppink, 0 0 5px rgba(0, 0, 0, 1), inset 0 0 5px rgba(0, 0, 0, 1);
+            border-radius: 10px;
+        }
+        
+        .border2 .contentB2 h2 {
+            color: deeppink;
+        }
+        
+        .border2 .contentB2 p {
+            color: dimgray;
+        }
+        /*Border3*/
+        
+        .border3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            width: 1200px;
+            height: 100px;
+            margin: 2% 0% 0% 10%;
+        }
+        
+        .btn {
+            width: 1200px;
+            height: 100px;
+            margin: 2% 0% 0% 10%;
+            transition: 0.5s ease;
+            box-shadow: 0 0 20px #fff;
+        }
+        
+        .abt-btn {
+            width: 1200px;
+            height: 100px;
+            margin: 2% 0% 0% 10%;
+            border: 8px solid;
+            border-image-slice: 1;
+            box-sizing: border-box;
+            border-image-source: linear-gradient(to right, #F57B47, #7738F5);
+        }
+        /*Border4*/
+        
+        .border4 {
+            background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+            border-radius: 40px;
+            box-sizing: border-box;
+            padding: 6px;
+            position: relative;
+            text-decoration: none;
+            z-index: 2;
+            width: 1050px;
+            height: 680px;
+            margin: 5% 0% 0% 1.5%;
+        }
+        
+        .border4 span {
+            border-radius: 40px;
+            display: flex;
+            height: 100%;
+            transition: background .5s ease;
+            width: 100%;
+            background: #2c283e;
+            background: -webkit-linear-gradient(#2c283e, yellow, green);
+            background: -o-linear-gradient(#2c283e, yellow, green);
+            background: -moz-linear-gradient(#2c283e, yellow, green);
+            background: linear-gradient(#2c283e, #2D293E, #625468, #7F6777, #98767D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+        
+        @keyframes animateBorder2 {
+            from {
+                background-position: 0;
+            }
+            to {
+                background-position: 0 450px;
+            }
+        }
+        
+        p.one {
+            margin: 15% 0% 0% 10%;
+            padding: 0% 0% 0% 0%;
+            font-size: 20px;
+        }
+        
+        p.one1 {
+            margin: 0% 7% 0% 0%;
+            padding: 0% 0% 0% 3%;
+            font-size: 16px;
+            text-align: right;
+        }
+        
+        p.three {
+            margin: 15% 0% 0% 10%;
+            padding: 0% 0% 0% 0%;
+            font-size: 20px;
+        }
+        
+        p.three3 {
+            margin: 0% 7% 0% 0%;
+            padding: 0% 0% 0% 3%;
+            font-size: 16px;
+            text-align: right;
+        }
+        
+        div.two {
+            margin: 23% 0% 0% 10%;
+            padding: 0% 0% 0% 4%;
+            font-size: 18px;
+            line-height: 0px;
+            text-align: left;
+        }
+        
+        .sunFlower {
+            width: 380px;
+            height: 300px;
+            margin: 25% 0% 0% -10%;
+            padding: 0% 0% 10% 0%;
+        }
+        
+        .sunFlower {
+            background: transparent url(https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/lotus.png?raw=true) repeat top center;
+            z-index: 3;
+            -moz-animation: move-sunFlower-back 200s linear infinite;
+            -ms-animation: move-sunFlower-back 200s linear infinite;
+            -o-animation: move-sunFlower-back 200s linear infinite;
+            -webkit-animation: move-sunFlower-back 200s linear infinite;
+            animation: move-sunFlower-back 200s linear infinite;
+        }
+        
+        @keyframes move-sunFlower-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+        
+        @-webkit-keyframes move-sunFlower-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+        
+        @-moz-keyframes move-sunFlower-back {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+        
+        @-ms-keyframes move-sunFlower-back {
+            from {
+                background-position: 0;
+            }
+            to {
+                background-position: 10000px 0;
+            }
+        }
+        /**/
+        
+         :root {
+            --fc1: #f20;
+            --fc2: #ff0;
+            --fc3: #04f;
+            --fc4: #0f4;
+            --fc5: #f0f;
+            --fc: var(--fc1);
+        }
+        
+        .fireworks:before,
+        .fireworks:after {
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            box-shadow: -120px 0 var(--fc), 120px 0 var(--fc), 0 120px var(--fc), 0 -120px var(--fc), 45px 45px var(--fc), -45px 45px var(--fc), 85px 85px var(--fc), -85px 85px var(--fc), 45px -45px var(--fc), -45px -45px var(--fc), 85px -85px var(--fc), -85px -85px var(--fc), 65px 0 var(--fc), -65px 0 var(--fc), 0 65px var(--fc), 0 -65px var(--fc), 100px 45px var(--fc), -100px 45px var(--fc), -50px 100px var(--fc), 50px 100px var(--fc), 100px -45px var(--fc), -100px -45px var(--fc), -50px -100px var(--fc), 50px -100px var(--fc), 5px 10px var(--fc);
+            animation: 3s bang ease-out infinite backwards, 3s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+        }
+        
+        .fireworks:after {
+            animation-delay: 5s, 5s, 5s;
+            animation-duration: 5s, 5s, 6.25s;
+        }
+        
+        @keyframes bang {
+            from {
+                box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+            }
+        }
+        
+        @keyframes gravity {
+            to {
+                transform: translate(-10px, 150px);
+                height: 6px;
+                width: 4px;
+                opacity: 0;
+            }
+        }
+        
+        @keyframes position {
+            0%,
+            19.9% {
+                margin-top: 0%;
+                margin-left: 40%;
+                --fc: var(--fc1);
+            }
+            20%,
+            39.9% {
+                margin-top: 0%;
+                margin-left: 70%;
+                --fc: var(--fc2);
+            }
+            40%,
+            59.9% {
+                margin-top: 0%;
+                margin-left: 70%;
+                --fc: var(--fc3);
+            }
+            60%,
+            79.9% {
+                margin-top: 0%;
+                margin-left: 20%;
+                --fc: var(--fc4);
+            }
+            80%,
+            99.9% {
+                margin-top: 0%;
+                margin-left: 80%;
+                --fc: var(--fc5);
+            }
+        }
+        /*Heart*/
+        
+        .heartRed {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            float: right;
+            margin-top: 1%;
+        }
+        
+        .heartRed:before,
+        .heartRed:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #e95e8c;
+            -moz-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+        
+        .heartRed:after {
+            left: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+        
+        .heartBlue {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            float: left;
+            margin-top: 1%;
+        }
+        
+        .heartBlue:before,
+        .heartBlue:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #5ed9e9;
+            -moz-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+        
+        .heartBlue:after {
+            left: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+        
+        .heartOrange {
+            position: relative;
+            width: 100px;
+            height: 90px;
+            float: right;
+        }
+        
+        .heartOrange:before,
+        .heartOrange:after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #ffa175;
+            -moz-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+        
+        .heartOrange:after {
+            left: 0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+        /*Star*/
+        
+        .star {
+            position: absolute;
+            background: #fdd;
+            border-radius: 50%;
+            width: 7px;
+            height: 7px;
+            top: 50%;
+            left: 50%;
+            box-shadow: 0 0 20px 10px #fff;
+            opacity: 0.8;
+            animation: twinkle 1s infinite
+        }
+        
+        @keyframes twinkle {
+            0% {
+                box-shadow: 0 0 20px 5px #fff;
+            }
+            50% {
+                box-shadow: 0 0 30px 5px #fff;
+            }
+        }
+        
+        .star1 {
+            margin: -15% 0% 0% -40%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 0.5s;
+        }
+        
+        .star2 {
+            margin: 0% 0% 0% -45%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 0.7s;
+        }
+        
+        .star3 {
+            margin: -10% 0% 0% -30%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1s;
+        }
+        
+        .star4 {
+            margin: -19% 0% 0% -20%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.2s;
+        }
+        
+        .star5 {
+            margin: -11% 0% 0% -10%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.5s;
+        }
+        
+        .star6 {
+            margin: 5% 0% 0% -32%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 0.9s;
+        }
+        
+        .star7 {
+            margin: 3% 0% 0% -16%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.8s;
+        }
+        
+        .star8 {
+            margin: 12% 0% 0% -40%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.6s;
+        }
+        
+        .star9 {
+            margin: 20% 0% 0% -42%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 2.5s;
+        }
+        
+        .star10 {
+            margin: 28% 0% 0% -38%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 2.1s;
+        }
+        
+        .star11 {
+            margin: 13.5% 0% 0% -26%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.7s;
+        }
+        
+        .star12 {
+            margin: 11% 0% 0% -10%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.6s;
+        }
+        
+        .star13 {
+            margin: 25% 0% 0% -30%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.9s;
+        }
+        
+        .star14 {
+            margin: 28% 0% 0% -6%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 2.3s;
+        }
+        
+        .star15 {
+            margin: 23% 0% 0% -15%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 2s;
+        }
+        
+        .star16 {
+            margin: 25% 0% 0% 47%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 2s;
+        }
+        
+        .star17 {
+            margin: 15% 0% 0% 41%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.5s;
+        }
+        
+        .star18 {
+            margin: 5% 0% 0% 44%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.8s;
+        }
+        
+        .star19 {
+            margin: -5% 0% 0% 42.5%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1.3s;
+        }
+        
+        .star20 {
+            margin: -18% 0% 0% 45.5%;
+            animation: twinkle1 1s infinite;
+            animation-delay: 1s;
+        }
+        
+        @keyframes twinkle1 {
+            0% {
+                box-shadow: 0 0 20px 5px rgb(255, 255, 255);
+            }
+            50% {
+                box-shadow: 0 0 30px 5px rgb(229, 255, 0);
+            }
+        }
+        
+        @keyframes twinkle3 {
+            0% {
+                box-shadow: 0 0 15px 5px #fff;
+            }
+            50% {
+                box-shadow: 0 0 30px 5px #fff;
+            }
+            100% {
+                box-shadow: 0 0 15px 5px #fff;
+            }
+        }
+        /*Led*/
+        
+        .cont {
+            width: 250px;
+            height: 550px;
+            background: #2c283e;
+            background: -webkit-linear-gradient(#2c283e, yellow, green);
+            background: -o-linear-gradient(#2c283e, yellow, green);
+            background: -moz-linear-gradient(#2c283e, yellow, green);
+            background: linear-gradient(#2c283e, #2D293E, #625468, #7F6777, #98767D);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+            margin: 3% 0% 0% 2%;
+        }
+        
+        .string {
+            border: 1px solid white;
+            width: 100px;
+            height: 600px;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: static;
+            z-index: 1;
+            margin: 0% 0% 0% 0%;
+        }
+        
+        .lightbulb1 {
+            transform: rotate(180deg) scale(0.3);
+            margin: -100% 0% 0% -0.5%;
+        }
+        
+        .lightbulb2 {
+            transform: rotate(180deg) scale(0.3);
+            margin: -100% 0% 0% -1%;
+        }
+        
+        .bulb {
+            display: block;
+            width: 126px;
+            height: 180px;
+            background-color: rgba(255, 251, 228, .4);
+            border: 3px solid rgba(255, 251, 228, .3);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            transform: rotate(180deg);
+            margin-bottom: -30px;
+            box-shadow: 0 0 50px 0px #fff6a8;
+            animation: lightglow 3s 1s infinite linear;
+        }
+        
+        .stack {
+            position: relative;
+            width: 100px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: rgb(89, 89, 89);
+            list-style: none;
+            margin-left: -26px;
+        }
+        
+        .g {
+            background-color: black;
+        }
+        
+        .wire {
+            position: relative;
+            display: block;
+            width: 66px;
+            height: 80px;
+            border: 5px solid #fff375;
+            opacity: .8;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            margin-bottom: -30px;
+            margin-left: 26px;
+            z-index: 3;
+            box-shadow: inset 0 0 10px 1px #fff6a8;
+        }
+        
+        .bulb:hover {
+            animation: hoverglow 3s 1s infinite alternate;
+        }
+    </style>
+
+    <script>
+        const signs = document.querySelectorAll('fontNineColor')
+        const randomIn = (min, max) => (
+            Math.floor(Math.random() * (max - min + 1) + min)
+        )
+
+        const mixupInterval = el => {
+            const ms = randomIn(2000, 4000)
+            el.style.setProperty('--interval', `${ms}ms`)
+        }
+
+        signs.forEach(el => {
+            mixupInterval(el)
+            el.addEventListener('webkitAnimationIteration', () => {
+                mixupInterval(el)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="fireworks"></div>
+        <h1 class="rainbow">Happy Teacher Day !</h1>
+        <blockquote class="one" style="text-align: left; display: flex; justify-content: space-between; margin: -2% 0% 0% 0%;">Day 20/11
+            <blockquote class="one" style="text-align: right; margin: 0% 0% 0% 2%;">Day 20/11</blockquote>
+        </blockquote>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="border2">
+                <div class="contentB2">
+                    <ul class="list">
+                        <li style="text-indent: 250px;">
+                            <fontNineColorBlue style="margin-bottom: -1%; font-size: 30px; margin-left: 5%;">TEACHER</fontNineColorBlue>
+                        </li>
+                        <li>Dear Teacher,</li>
+                        <li>Special thanks for caring,</li>
+                        <li>for love and tenderness. </li>
+                        <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/pencil2.png?raw=true" alt="book" style="margin: -70% 0% 0% 91.5%; opacity: 0.8;">
+                        <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/heart.png?raw=true" alt="book" style="margin: -90% 0% 0% 0%; opacity: 0.8;">
+                        <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/school2.png?raw=true" alt="book" style="margin: -90% 0% 0% 1%; opacity: 0.8;">
+                        <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/school6.png?raw=true" alt="book" style="margin: -70% 0% 0% 73%; opacity: 0.8;" height="220px">
+                        <li style="padding: 10px 10px 10px 50px; margin-top: -7%;">Your patience and generosity,</li>
+                        <li>and boundless thoughtfulness.</li>
+                        <li>Your imprint lives forever</li>
+                        <li>in my heart and in my mind.</li>
+                        <li>Thank you so much teacher,</li>
+                        <li>for you are so very kind!</li>
+                        <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/book2.png?raw=true" alt="book " style="margin: -60% 0% 0% 71.5%; opacity: 0.8; ">
+                        <li style="list-style: none; border-bottom: 1px dotted #ccc; text-indent: 300px; height: 40px; padding: 10px 10px 10px 50px; margin-top: -2%; ">Love Teacher!</li>
+                        <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/tree.png?raw=true" alt="book " style="margin: -60% 0% 0% 1%; opacity: 0.8; padding-top: -10%; ">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border4 ">
+                <span>
+                    <div class="lightbulb1 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    <div class="lightbulb2 ">
+                        <div class="bulb ">
+                            <div class="wire "></div>
+                        </div>
+                        <ul>
+                            <li class="stack "></li>
+                            <li class="stack g "></li>
+                            <li class="stack "></li>
+                        </ul>
+                    </div> 
+
+                    
+                    <div class="star star1 "></div>
+                    <div class="star star2 "></div>
+                    <div class="star star3 "></div>
+                    <div class="star star4 "></div>
+                    <div class="star star5 "></div>
+                    <div class="star star6 "></div>
+                    <div class="star star7 "></div>
+                    <div class="star star8 "></div>
+                    <div class="star star9 "></div>
+                    <div class="star star10 "></div>
+                    <div class="star star11 "></div>
+                    <div class="star star12 "></div>
+                    <div class="star star13 "></div>
+                    <div class="star star14 "></div>
+                    <div class="star star15 "></div>
+                    <div class="star star16 "></div>
+                    <div class="star star17 "></div>
+                    <div class="star star18 "></div>
+                    <div class="star star19 "></div>
+                    <div class="star star20 "></div>
+                    
+
+                    <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/pencil.png?raw=true" style="margin: 14% 0% 0% -95%; opacity: 0.7; " height="450px ">
+                    <div class="bookCard ">
+                        <div class="back "></div>
+                        <div class="front ">
+                            <div class="imgset ">
+                                <img width="100% " src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/teacher5.jpg?raw=true">
+                            </div>
+                        </div>
+                        <div class="text-container ">
+                            <h3>Teacher</h3>
+                            <p>You are the heart of every class room</p>
+                            <p>The soul of every school.</p>
+                            <p>The mind behind the message.</p>
+                            <p>That learning is cool.</p>
+                            <p>Your patience and understanding</p>
+                            <p>Cannot be undersold.</p>
+                            <p>Your courage and commitment</p>
+                            <p>Is that of legends told.</p>
+                            <p>Each day you teach our children</p>
+                            <p>Is a day to rejoice.</p>
+                            <p>Because of you our children.</p>
+                            <p>Will have their own voice.</p>
+                            <p>So Thank You Dear Teacher</p>
+                            <p>For passing knowledge</p>
+                            <p>Through the years.</p>
+                            <p>You thought you were merely teaching.</p>
+                            <p>When you were eliminating fears.</p>
+                            <p>Thank You!</p>
+                        </div>
+                    </div>
+                </span>
+            </div>
+        </div>
+
+        <div class="rightcolumn ">
+            <div class="card1 ">
+                <div class="circle-1Corner1 ">
+                    <p class="one ">
+                        <fontNineColorBlack>"Better than a thousand days of diligent - study is one day with a great teacher "</fontNineColorBlack>
+                    </p>
+                    <p class="one1 ">
+                        <fontNineColorBlack>&mdash;Japanese Proverb</fontNineColorBlack>
+                    </p>
+                </div>
+
+                <div class="circle-2Corner1 ">
+                    <div class="two ">
+                        <p>
+                            <fontNineColorBlack>One Book One Pen</fontNineColorBlack>
+                        </p>
+                        <br/>
+                        <p>
+                            <fontNineColorBlack>One Child and</fontNineColorBlack>
+                        </p>
+                        <br/>
+                        <p>
+                            <fontNineColorBlack>One Teacher can</fontNineColorBlack>
+                        </p>
+                        <br/>
+                        <p>
+                            <fontNineColorBlack>change the world.</fontNineColorBlack>
+                        </p>
+                        <br/>
+                        <br/>
+                        <p style="margin-left: 15%; font-size: 13px; ">
+                            <fontNineColorBlack>&mdash;Malala Yousafzai</fontNineColorBlack>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="circle-3Corner1 ">
+                    <p class="three ">
+                        <fontNineColorBlack>If you have to put someone on a pedestal, put teachers. They are society’s heroes.</fontNineColorBlack>
+                    </p>
+                    <p class="three3 ">
+                        <fontNineColorBlack>&mdash;Guy Kawasaki</fontNineColorBlack>
+                    </p>
+                </div>
+            </div>
+
+            <div class="sunFlower "></div>
+
+            <div class="card2 ">
+                <footer style="bottom: 20px; right: 0; display: flex; justify-content: flex-end; width: 100%; align-items: center; margin: 5% 0% 0% -20%; ">
+                    <div style="text-align: right;line-height: 1.25; font-weight: bold; font-size: 13px ">
+                        <span id="icon-name " style="display: block; "><fontNineColorGreen>[Class: 19H50301]</fontNineColorGreen></span>
+                        <span style="display: block; font-family: 'Times New Roman', Times, serif; "><fontNineColorGreen>[Bach Tran Anh Duc - 51900313]</fontNineColorGreen></span>
+                        <span style="display: block; font-family: 'Times New Roman', Times, serif; "><fontNineColorGreen>[Thai Thi Thanh Nhan - 519H0083]</fontNineColorGreen></span>
+                        <span style="display: block; "><fontNineColorGreen>[Nguyen Huu Nam - 519H0320]</fontNineColorGreen></span>
+                        <span style="display: block; "><fontNineColorGreen>[Group name: NND]</fontNineColorGreen></span>
+                    </div>
+                    <img style="width: 120px; height: auto; margin: 0% -25% 0% -5%; " src="https://iconclub.github.io/assets/iconLogo.png " alt="ICON ">
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-div main-div2 ">
+        <div class="blockquote2-wrapper ">
+            <div class="blockquote2 ">
+                <h1>
+                    <fontNineColor style="font-size: 35px; ">Light from here shall illuminate the entire universe</fontNineColor>
+                </h1>
+                <fontNineColorPink style="margin: 2% 0% 0% 35%; font-size: 20px; ">&mdash;Ton Duc Thang University</fontNineColorPink>
+            </div>
+        </div>
+    </div>
+
+    <img src="https://github.com/NND-it-tdtu/NND-it-tdtu.github.io/blob/master/LogoTDTU.png?raw=true" alt="TDTU " style="margin: -15% 0% 0% 83%; ">
+
+</body>
+
+</html>
